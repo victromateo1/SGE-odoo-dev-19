@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vmn_aerolinea.azafata_form" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.azafata.form</field>
+            <field name="model">vmn_aerolinea.azafata</field>
+            <field name="arch" type="xml">
+                <form string="Azafato/a">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="puesto"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+
+        <record id="vmn_aerolinea.azafata_tree" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.azafata.tree</field>
+            <field name="model">vmn_aerolinea.azafata</field>
+            <field name="arch" type="xml">
+                <tree string="Azafato/a">
+                    <field name="name"/>
+                    <field name="puesto"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

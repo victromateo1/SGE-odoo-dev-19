@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vmn_aerolinea.avion_form" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.avion.form</field>
+            <field name="model">vmn_aerolinea.avion</field>
+            <field name="arch" type="xml">
+                <form string="Avion">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="litrosCombustible"/>
+                            <field name="destino"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+
+        <record id="vmn_aerolinea.avion_tree" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.avion.tree</field>
+            <field name="model">vmn_aerolinea.avion</field>
+            <field name="arch" type="xml">
+                <tree string="Avion">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="litrosCombustible"/>
+                    <field name="destino"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

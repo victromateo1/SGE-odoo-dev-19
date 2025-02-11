@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vmn_aerolinea.maleta_form" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.maleta.form</field>
+            <field name="model">vmn_aerolinea.maleta</field>
+            <field name="arch" type="xml">
+                <form string="Maleta">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="peso"/>
+                            <field name="destino"/>
+                            <field name="cabina"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>        
+
+        <record id="vmn_aerolinea.maleta_tree" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.maleta.tree</field>
+            <field name="model">vmn_aerolinea.maleta</field>
+            <field name="arch" type="xml">
+                <tree string="Maleta">
+                    <field name="name"/>
+                    <field name="peso"/>
+                    <field name="destino"/>
+                    <field name="cabina"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

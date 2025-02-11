@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vmn_aerolinea.pasajero_form" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.pasajero.form</field>
+            <field name="model">vmn_aerolinea.pasajero</field>
+            <field name="arch" type="xml">
+                <form string="Pasajero">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="destino"/>
+                            <field name="numAsiento"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+
+        <record id="vmn_aerolinea.pasajero_tree" model="ir.ui.view">
+            <field name="name">vmn_aerolinea.pasajero.tree</field>
+            <field name="model">vmn_aerolinea.pasajero</field>
+            <field name="arch" type="xml">
+                <tree string="Pasajero">
+                    <field name="name"/>
+                    <field name="destino"/>
+                    <field name="numAsiento"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vmn_aerolinea.avion_action" model="ir.actions.act_window">
+            <field name="name">Aviones</field>
+            <field name="res_model">vmn_aerolinea.avion</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="vmn_aerolinea.pasajero_action" model="ir.actions.act_window">
+            <field name="name">Pasajeros</field>
+            <field name="res_model">vmn_aerolinea.pasajero</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="vmn_aerolinea.maleta_action" model="ir.actions.act_window">
+            <field name="name">Maletas</field>
+            <field name="res_model">vmn_aerolinea.maleta</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="vmn_aerolinea.azafata_action" model="ir.actions.act_window">
+            <field name="name">Azafatos</field>
+            <field name="res_model">vmn_aerolinea.azafata</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="vmn_aerolinea.root_menu"
+            name="Aerolínea"
+            sequence="10"/>       
+
+        <menuitem
+            id="vmn_aerolinea.avion_menu"
+            name="Avión"
+            action="vmn_aerolinea.avion_action"
+            parent="vmn_aerolinea.root_menu"
+            sequence="10"/>        
+        
+        <menuitem
+            id="vmn_aerolinea.pasajero_menu"
+            name="Pasajero"
+            action="vmn_aerolinea.pasajero_action"
+            parent="vmn_aerolinea.root_menu"
+            sequence="10"/> 
+
+        <menuitem
+            id="vmn_aerolinea.maleta_menu"
+            name="Maleta"
+            action="vmn_aerolinea.maleta_action"
+            parent="vmn_aerolinea.root_menu"
+            sequence="10"/> 
+
+        <menuitem
+            id="vmn_aerolinea.azafata_menu"
+            name="Azafata"
+            action="vmn_aerolinea.azafata_action"
+            parent="vmn_aerolinea.root_menu"
+            sequence="10"/> 
+    </data>
+</odoo>
