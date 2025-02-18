@@ -1,30 +1,141 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="vmn_aerolinea.vmn_aerolinea">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
-          </record>
 
-          <record id="object1" model="vmn_aerolinea.vmn_aerolinea">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
+        <record id="avion_1" model="vmn_aerolinea.avion">
+            <field name="name">Avión A</field>
+            <field name="description">Avión para vuelos nacionales</field>
+            <field name="litrosCombustible">10000</field>
+            <field name="destino">Madrid</field>
+        </record>
 
-          <record id="object2" model="vmn_aerolinea.vmn_aerolinea">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
+        <record id="avion_2" model="vmn_aerolinea.avion">
+            <field name="name">Avión B</field>
+            <field name="description">Avión para vuelos internacionales</field>
+            <field name="litrosCombustible">15000</field>
+            <field name="destino">New York</field>
+        </record>
 
-          <record id="object3" model="vmn_aerolinea.vmn_aerolinea">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
+        <record id="pasajero_1" model="vmn_aerolinea.pasajero">
+            <field name="name">Juan Pérez</field>
+            <field name="destino">Madrid</field>
+            <field name="numAsiento">12A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
 
-          <record id="object4" model="vmn_aerolinea.vmn_aerolinea">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
+        <record id="pasajero_2" model="vmn_aerolinea.pasajero">
+            <field name="name">Ana Gómez</field>
+            <field name="destino">New York</field>
+            <field name="numAsiento">15B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="maleta_1" model="vmn_aerolinea.maleta">
+            <field name="name">Maleta 1</field>
+            <field name="peso">23</field>
+            <field name="destino">Madrid</field>
+            <field name="cabina">False</field>
+            <field name="pasajero_id" ref="pasajero_1"/>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="maleta_2" model="vmn_aerolinea.maleta">
+            <field name="name">Maleta 2</field>
+            <field name="peso">15</field>
+            <field name="destino">New York</field>
+            <field name="cabina">True</field>
+            <field name="pasajero_id" ref="pasajero_2"/>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="azafata_1" model="vmn_aerolinea.azafata">
+            <field name="name">María López</field>
+            <field name="puesto">0</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="azafata_2" model="vmn_aerolinea.azafata">
+            <field name="name">Laura Fernández</field>
+            <field name="puesto">1</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_1_azafata_1" model="vmn_aerolinea_azafata_pasajero_rel">
+            <field name="azafata_ids" ref="azafata_1"/>
+            <field name="pasajero_ids" ref="pasajero_1"/>
+        </record>
+
+        <record id="pasajero_2_azafata_2" model="vmn_aerolinea_azafata_pasajero_rel">
+            <field name="azafata_ids" ref="azafata_2"/>
+            <field name="pasajero_ids" ref="pasajero_2"/>
+        </record>
+
+        <record id="avion_3" model="vmn_aerolinea.avion">
+            <field name="name">Avión C</field>
+            <field name="description">Avión de carga</field>
+            <field name="litrosCombustible">20000</field>
+            <field name="destino">Londres</field>
+        </record>
+
+        <record id="avion_4" model="vmn_aerolinea.avion">
+            <field name="name">Avión D</field>
+            <field name="description">Avión privado</field>
+            <field name="litrosCombustible">5000</field>
+            <field name="destino">Paris</field>
+        </record>
+
+        <record id="pasajero_3" model="vmn_aerolinea.pasajero">
+            <field name="name">Carlos Martínez</field>
+            <field name="destino">Londres</field>
+            <field name="numAsiento">5A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_4" model="vmn_aerolinea.pasajero">
+            <field name="name">Beatriz Rodríguez</field>
+            <field name="destino">Paris</field>
+            <field name="numAsiento">18C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="maleta_3" model="vmn_aerolinea.maleta">
+            <field name="name">Maleta 3</field>
+            <field name="peso">30</field>
+            <field name="destino">Londres</field>
+            <field name="cabina">False</field>
+            <field name="pasajero_id" ref="pasajero_3"/>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="maleta_4" model="vmn_aerolinea.maleta">
+            <field name="name">Maleta 4</field>
+            <field name="peso">10</field>
+            <field name="destino">Paris</field>
+            <field name="cabina">True</field>
+            <field name="pasajero_id" ref="pasajero_4"/>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="azafata_3" model="vmn_aerolinea.azafata">
+            <field name="name">Cristina Sánchez</field>
+            <field name="puesto">2</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="azafata_4" model="vmn_aerolinea.azafata">
+            <field name="name">Sofía García</field>
+            <field name="puesto">3</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_3_azafata_3" model="vmn_aerolinea_azafata_pasajero_rel">
+            <field name="azafata_ids" ref="azafata_3"/>
+            <field name="pasajero_ids" ref="pasajero_3"/>
+        </record>
+
+        <record id="pasajero_4_azafata_4" model="vmn_aerolinea_azafata_pasajero_rel">
+            <field name="azafata_ids" ref="azafata_4"/>
+            <field name="pasajero_ids" ref="pasajero_4"/>
+        </record>
+
     </data>
 </odoo>

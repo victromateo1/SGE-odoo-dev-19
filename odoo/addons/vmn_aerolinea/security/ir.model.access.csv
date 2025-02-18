@@ -1,2 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_vmn_aerolinea_vmn_aerolinea,vmn_aerolinea.vmn_aerolinea,model_vmn_aerolinea_vmn_aerolinea,base.group_user,1,1,1,1
+access_vmn_aerolinea_avion_users,vmn_aerolinea.avion_users,model_vmn_aerolinea_avion,base.group_user,1,1,1,0
+access_vmn_aerolinea_avion_admin,vmn_aerolinea.avion_admin,model_vmn_aerolinea_avion,base.group_system,1,1,1,1
+access_vmn_aerolinea_pasajero_users,vmn_aerolinea.pasajero_users,model_vmn_aerolinea_pasajero,base.group_user,1,1,1,0
+access_vmn_aerolinea_pasajero_admin,vmn_aerolinea.pasajero_admin,model_vmn_aerolinea_pasajero,base.group_system,1,1,1,1
+access_vmn_aerolinea_azafata_users,vmn_aerolinea.azafata_users,model_vmn_aerolinea_azafata,base.group_user,1,1,1,0
+access_vmn_aerolinea_azafata_admin,vmn_aerolinea.azafata_admin,model_vmn_aerolinea_azafata,base.group_system,1,1,1,1
+access_vmn_aerolinea_maleta_users,vmn_aerolinea.maleta_users,model_vmn_aerolinea_maleta,base.group_user,1,1,1,0
+access_vmn_aerolinea_maleta_admin,vmn_aerolinea.maleta_admin,model_vmn_aerolinea_maleta,base.group_system,1,1,1,1

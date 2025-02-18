@@ -10,6 +10,8 @@
                         <group>
                             <field name="name"/>
                             <field name="puesto"/>
+                            <field name="avion_id"/>
+                            <field name="pasajero_ids"/>
                         </group>
                     </sheet>
                 </form>
@@ -24,6 +26,8 @@
                 <tree string="Azafato/a">
                     <field name="name"/>
                     <field name="puesto"/>
+                    <field name="avion_id"/>
+                    <field name="pasajero_ids"/>
                 </tree>
             </field>
         </record>

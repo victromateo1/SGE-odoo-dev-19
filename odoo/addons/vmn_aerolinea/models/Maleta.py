@@ -10,3 +10,6 @@ class Maleta(models.Model):
     peso = fields.Integer('Peso')
     destino = fields.Char('Destino')
     cabina = fields.Boolean('Maleta de cabina')
+    
+    pasajero_id = fields.Many2one('vmn_aerolinea.pasajero', string='Pasajero')
+    avion_id = fields.Many2one('vmn_aerolinea.avion', string='Avion')

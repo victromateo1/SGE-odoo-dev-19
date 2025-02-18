@@ -12,6 +12,8 @@
                             <field name="peso"/>
                             <field name="destino"/>
                             <field name="cabina"/>
+                            <field name="pasajero_id"/>
+                            <field name="avion_id"/>
                         </group>
                     </sheet>
                 </form>
@@ -27,6 +29,8 @@
                     <field name="peso"/>
                     <field name="destino"/>
                     <field name="cabina"/>
+                    <field name="pasajero_id"/>
+                    <field name="avion_id"/>
                 </tree>
             </field>
         </record>

@@ -11,6 +11,9 @@
                             <field name="name"/>
                             <field name="destino"/>
                             <field name="numAsiento"/>
+                            <field name="avion_id"/>
+                            <field name="maleta_ids"/>
+                             <field name="azafata_ids"/>
                         </group>
                     </sheet>
                 </form>
@@ -26,6 +29,9 @@
                     <field name="name"/>
                     <field name="destino"/>
                     <field name="numAsiento"/>
+                    <field name="avion_id"/>
+                    <field name="maleta_ids"/>
+                     <field name="azafata_ids"/>
                 </tree>
             </field>
         </record>
