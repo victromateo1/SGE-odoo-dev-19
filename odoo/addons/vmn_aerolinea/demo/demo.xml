@@ -2,49 +2,95 @@
     <data>
 
         <record id="avion_1" model="vmn_aerolinea.avion">
-            <field name="name">Avión A</field>
+            <field name="name">Boeing 747</field>
             <field name="description">Avión para vuelos nacionales</field>
-            <field name="litrosCombustible">10000</field>
-            <field name="destino">Madrid</field>
+            <field name="litrosCombustible">6987</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
         </record>
 
         <record id="avion_2" model="vmn_aerolinea.avion">
-            <field name="name">Avión B</field>
+            <field name="name">Airbus A330</field>
             <field name="description">Avión para vuelos internacionales</field>
-            <field name="litrosCombustible">15000</field>
-            <field name="destino">New York</field>
+            <field name="litrosCombustible">35478</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+        </record>
+
+        <record id="avion_3" model="vmn_aerolinea.avion">
+            <field name="name">Boeing 777</field>
+            <field name="description">Avión para vuelos internacionales</field>
+            <field name="litrosCombustible">15749</field>
+            <field name="destino">London City Airport</field>
+        </record>
+
+        <record id="avion_4" model="vmn_aerolinea.avion">
+            <field name="name">Boeing 737</field>
+            <field name="description">Avión privado</field>
+            <field name="litrosCombustible">3759</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
         </record>
 
         <record id="pasajero_1" model="vmn_aerolinea.pasajero">
             <field name="name">Juan Pérez</field>
-            <field name="destino">Madrid</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
             <field name="numAsiento">12A</field>
             <field name="avion_id" ref="avion_1"/>
         </record>
 
         <record id="pasajero_2" model="vmn_aerolinea.pasajero">
             <field name="name">Ana Gómez</field>
-            <field name="destino">New York</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
             <field name="numAsiento">15B</field>
             <field name="avion_id" ref="avion_2"/>
         </record>
 
+        <record id="pasajero_3" model="vmn_aerolinea.pasajero">
+            <field name="name">Carlos Martínez</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">5A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_4" model="vmn_aerolinea.pasajero">
+            <field name="name">Beatriz Rodríguez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">18C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
         <record id="maleta_1" model="vmn_aerolinea.maleta">
-            <field name="name">Maleta 1</field>
+            <field name="name">Emidio Tucci - Maleta Trolley</field>
             <field name="peso">23</field>
-            <field name="destino">Madrid</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
             <field name="cabina">False</field>
             <field name="pasajero_id" ref="pasajero_1"/>
             <field name="avion_id" ref="avion_1"/>
         </record>
 
         <record id="maleta_2" model="vmn_aerolinea.maleta">
-            <field name="name">Maleta 2</field>
+            <field name="name">Movom</field>
             <field name="peso">15</field>
-            <field name="destino">New York</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
             <field name="cabina">True</field>
             <field name="pasajero_id" ref="pasajero_2"/>
             <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="maleta_3" model="vmn_aerolinea.maleta">
+            <field name="name">Modo by Roncato</field>
+            <field name="peso">30</field>
+            <field name="destino">London City Airport</field>
+            <field name="cabina">False</field>
+            <field name="pasajero_id" ref="pasajero_3"/>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="maleta_4" model="vmn_aerolinea.maleta">
+            <field name="name">SKPAT</field>
+            <field name="peso">10</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="cabina">True</field>
+            <field name="pasajero_id" ref="pasajero_4"/>
+            <field name="avion_id" ref="avion_4"/>
         </record>
 
         <record id="azafata_1" model="vmn_aerolinea.azafata">
@@ -57,53 +103,7 @@
             <field name="name">Laura Fernández</field>
             <field name="puesto">1</field>
             <field name="avion_id" ref="avion_2"/>
-        </record>
-
-        <record id="avion_3" model="vmn_aerolinea.avion">
-            <field name="name">Avión C</field>
-            <field name="description">Avión de carga</field>
-            <field name="litrosCombustible">20000</field>
-            <field name="destino">Londres</field>
-        </record>
-
-        <record id="avion_4" model="vmn_aerolinea.avion">
-            <field name="name">Avión D</field>
-            <field name="description">Avión privado</field>
-            <field name="litrosCombustible">5000</field>
-            <field name="destino">Paris</field>
-        </record>
-
-        <record id="pasajero_3" model="vmn_aerolinea.pasajero">
-            <field name="name">Carlos Martínez</field>
-            <field name="destino">Londres</field>
-            <field name="numAsiento">5A</field>
-            <field name="avion_id" ref="avion_3"/>
-        </record>
-
-        <record id="pasajero_4" model="vmn_aerolinea.pasajero">
-            <field name="name">Beatriz Rodríguez</field>
-            <field name="destino">Paris</field>
-            <field name="numAsiento">18C</field>
-            <field name="avion_id" ref="avion_4"/>
-        </record>
-
-        <record id="maleta_3" model="vmn_aerolinea.maleta">
-            <field name="name">Maleta 3</field>
-            <field name="peso">30</field>
-            <field name="destino">Londres</field>
-            <field name="cabina">False</field>
-            <field name="pasajero_id" ref="pasajero_3"/>
-            <field name="avion_id" ref="avion_3"/>
-        </record>
-
-        <record id="maleta_4" model="vmn_aerolinea.maleta">
-            <field name="name">Maleta 4</field>
-            <field name="peso">10</field>
-            <field name="destino">Paris</field>
-            <field name="cabina">True</field>
-            <field name="pasajero_id" ref="pasajero_4"/>
-            <field name="avion_id" ref="avion_4"/>
-        </record>
+        </record>        
 
         <record id="azafata_3" model="vmn_aerolinea.azafata">
             <field name="name">Cristina Sánchez</field>
@@ -112,10 +112,10 @@
         </record>
 
         <record id="azafata_4" model="vmn_aerolinea.azafata">
-            <field name="name">Sofía García</field>
+            <field name="name">Gustavo García</field>
             <field name="puesto">3</field>
             <field name="avion_id" ref="avion_4"/>
         </record>
-        
+
     </data>
 </odoo>
