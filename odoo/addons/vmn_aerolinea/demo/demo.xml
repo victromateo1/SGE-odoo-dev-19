@@ -59,16 +59,6 @@
             <field name="avion_id" ref="avion_2"/>
         </record>
 
-        <record id="pasajero_1_azafata_1" model="vmn_aerolinea_azafata_pasajero_rel">
-            <field name="azafata_ids" ref="azafata_1"/>
-            <field name="pasajero_ids" ref="pasajero_1"/>
-        </record>
-
-        <record id="pasajero_2_azafata_2" model="vmn_aerolinea_azafata_pasajero_rel">
-            <field name="azafata_ids" ref="azafata_2"/>
-            <field name="pasajero_ids" ref="pasajero_2"/>
-        </record>
-
         <record id="avion_3" model="vmn_aerolinea.avion">
             <field name="name">Avión C</field>
             <field name="description">Avión de carga</field>
@@ -126,16 +116,6 @@
             <field name="puesto">3</field>
             <field name="avion_id" ref="avion_4"/>
         </record>
-
-        <record id="pasajero_3_azafata_3" model="vmn_aerolinea_azafata_pasajero_rel">
-            <field name="azafata_ids" ref="azafata_3"/>
-            <field name="pasajero_ids" ref="pasajero_3"/>
-        </record>
-
-        <record id="pasajero_4_azafata_4" model="vmn_aerolinea_azafata_pasajero_rel">
-            <field name="azafata_ids" ref="azafata_4"/>
-            <field name="pasajero_ids" ref="pasajero_4"/>
-        </record>
-
+        
     </data>
 </odoo>

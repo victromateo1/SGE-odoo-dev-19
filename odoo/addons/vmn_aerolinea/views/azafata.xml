@@ -11,7 +11,13 @@
                             <field name="name"/>
                             <field name="puesto"/>
                             <field name="avion_id"/>
-                            <field name="pasajero_ids"/>
+                            <field name="pasajero_ids">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="numAsiento"/>
+                                    <field name="destino"/>
+                                </tree>
+                            </field>
                         </group>
                     </sheet>
                 </form>
