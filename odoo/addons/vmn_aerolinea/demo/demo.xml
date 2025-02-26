@@ -6,6 +6,7 @@
             <field name="description">Avión para vuelos nacionales</field>
             <field name="litrosCombustible">6987</field>
             <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="imagen" file="vmn_aerolinea/static/img/boeing747.jpg" type="base64"></field>
         </record>
 
         <record id="avion_2" model="vmn_aerolinea.avion">
@@ -13,6 +14,7 @@
             <field name="description">Avión para vuelos internacionales</field>
             <field name="litrosCombustible">35478</field>
             <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="imagen" file="vmn_aerolinea/static/img/airbusa330.jpg" type="base64"></field>
         </record>
 
         <record id="avion_3" model="vmn_aerolinea.avion">
@@ -20,6 +22,7 @@
             <field name="description">Avión para vuelos internacionales</field>
             <field name="litrosCombustible">15749</field>
             <field name="destino">London City Airport</field>
+            <field name="imagen" file="vmn_aerolinea/static/img/boeing777.jpeg" type="base64"></field>
         </record>
 
         <record id="avion_4" model="vmn_aerolinea.avion">
@@ -27,33 +30,1089 @@
             <field name="description">Avión privado</field>
             <field name="litrosCombustible">3759</field>
             <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="imagen" file="vmn_aerolinea/static/img/boeing737.jpg" type="base64"></field>
         </record>
 
         <record id="pasajero_1" model="vmn_aerolinea.pasajero">
             <field name="name">Juan Pérez</field>
             <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
-            <field name="numAsiento">12A</field>
+            <field name="numAsiento">1A</field>
             <field name="avion_id" ref="avion_1"/>
         </record>
 
         <record id="pasajero_2" model="vmn_aerolinea.pasajero">
             <field name="name">Ana Gómez</field>
             <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
-            <field name="numAsiento">15B</field>
+            <field name="numAsiento">1B</field>
             <field name="avion_id" ref="avion_2"/>
         </record>
 
         <record id="pasajero_3" model="vmn_aerolinea.pasajero">
             <field name="name">Carlos Martínez</field>
             <field name="destino">London City Airport</field>
-            <field name="numAsiento">5A</field>
+            <field name="numAsiento">1C</field>
             <field name="avion_id" ref="avion_3"/>
         </record>
 
         <record id="pasajero_4" model="vmn_aerolinea.pasajero">
             <field name="name">Beatriz Rodríguez</field>
             <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">1D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_5" model="vmn_aerolinea.pasajero">
+            <field name="name">David Pérez</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">2A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_6" model="vmn_aerolinea.pasajero">
+            <field name="name">Laura Sánchez</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">2B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_7" model="vmn_aerolinea.pasajero">
+            <field name="name">Carlos Martínez</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">2C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_8" model="vmn_aerolinea.pasajero">
+            <field name="name">Sofía Rodríguez</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">2D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_9" model="vmn_aerolinea.pasajero">
+            <field name="name">Miguel Torres</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">3A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_10" model="vmn_aerolinea.pasajero">
+            <field name="name">Beatriz Rodríguez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">3B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_11" model="vmn_aerolinea.pasajero">
+            <field name="name">Javier López</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">3C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_12" model="vmn_aerolinea.pasajero">
+            <field name="name">Isabel Martínez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">3D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_13" model="vmn_aerolinea.pasajero">
+            <field name="name">Antonio Gómez</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">4A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_14" model="vmn_aerolinea.pasajero">
+            <field name="name">Marta Fernández</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">4B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_15" model="vmn_aerolinea.pasajero">
+            <field name="name">Luis Pérez</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">4C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_16" model="vmn_aerolinea.pasajero">
+            <field name="name">Cristina González</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">4D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_17" model="vmn_aerolinea.pasajero">
+            <field name="name">Fernando Ruiz</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">5A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_18" model="vmn_aerolinea.pasajero">
+            <field name="name">Raquel Díaz</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">5B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_19" model="vmn_aerolinea.pasajero">
+            <field name="name">Sergio Herrera</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">5C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_20" model="vmn_aerolinea.pasajero">
+            <field name="name">Álvaro Martínez</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">5D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_21" model="vmn_aerolinea.pasajero">
+            <field name="name">Carmen López</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">6A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_22" model="vmn_aerolinea.pasajero">
+            <field name="name">Juan Martínez</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">6B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_23" model="vmn_aerolinea.pasajero">
+            <field name="name">José López</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">6C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_24" model="vmn_aerolinea.pasajero">
+            <field name="name">Esther Romero</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">6D</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_25" model="vmn_aerolinea.pasajero">
+            <field name="name">Tomás Sánchez</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">7A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_26" model="vmn_aerolinea.pasajero">
+            <field name="name">María Fernández</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">7B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_27" model="vmn_aerolinea.pasajero">
+            <field name="name">Pablo García</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">7C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_28" model="vmn_aerolinea.pasajero">
+            <field name="name">Ricardo Martínez</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">7D</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_29" model="vmn_aerolinea.pasajero">
+            <field name="name">Ana María García</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">8A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_30" model="vmn_aerolinea.pasajero">
+            <field name="name">Luis Miguel Martínez</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">8B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_31" model="vmn_aerolinea.pasajero">
+            <field name="name">Pedro Sánchez</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">8C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_32" model="vmn_aerolinea.pasajero">
+            <field name="name">José Antonio Fernández</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">8D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_33" model="vmn_aerolinea.pasajero">
+            <field name="name">Patricia González</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">9A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_34" model="vmn_aerolinea.pasajero">
+            <field name="name">Antonio Martín</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">9B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_35" model="vmn_aerolinea.pasajero">
+            <field name="name">Laura Sánchez</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">9C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_36" model="vmn_aerolinea.pasajero">
+            <field name="name">Diego Ruiz</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">9D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+        <record id="pasajero_37" model="vmn_aerolinea.pasajero">
+            <field name="name">Sophia López</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">10A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_38" model="vmn_aerolinea.pasajero">
+            <field name="name">James Brown</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">10B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_39" model="vmn_aerolinea.pasajero">
+            <field name="name">Olivia Taylor</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">10C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_40" model="vmn_aerolinea.pasajero">
+            <field name="name">Liam Wilson</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">10D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_41" model="vmn_aerolinea.pasajero">
+            <field name="name">Emily Jackson</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">11A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_42" model="vmn_aerolinea.pasajero">
+            <field name="name">Lucas Martin</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">11B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_43" model="vmn_aerolinea.pasajero">
+            <field name="name">Ava García</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">11C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_44" model="vmn_aerolinea.pasajero">
+            <field name="name">Ethan Rodríguez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">11D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_45" model="vmn_aerolinea.pasajero">
+            <field name="name">Charlotte Hernández</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">12A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_46" model="vmn_aerolinea.pasajero">
+            <field name="name">Benjamin García</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">12B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_47" model="vmn_aerolinea.pasajero">
+            <field name="name">Amelia Pérez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">12C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_48" model="vmn_aerolinea.pasajero">
+            <field name="name">Mason Clark</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">12D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_49" model="vmn_aerolinea.pasajero">
+            <field name="name">Harper Martinez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">13A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_50" model="vmn_aerolinea.pasajero">
+            <field name="name">Jack Taylor</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">13B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_51" model="vmn_aerolinea.pasajero">
+            <field name="name">Grace Lee</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">13C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_52" model="vmn_aerolinea.pasajero">
+            <field name="name">Henry Wilson</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">13D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_53" model="vmn_aerolinea.pasajero">
+            <field name="name">Zoe Robinson</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">14A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_54" model="vmn_aerolinea.pasajero">
+            <field name="name">Milo Thompson</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">14B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_55" model="vmn_aerolinea.pasajero">
+            <field name="name">Ella King</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">14C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_56" model="vmn_aerolinea.pasajero">
+            <field name="name">Isaac White</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">14D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_57" model="vmn_aerolinea.pasajero">
+            <field name="name">Chloe Adams</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">15A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_58" model="vmn_aerolinea.pasajero">
+            <field name="name">David Scott</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">15B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_59" model="vmn_aerolinea.pasajero">
+            <field name="name">Lily Miller</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">15C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_60" model="vmn_aerolinea.pasajero">
+            <field name="name">Mason Harris</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">15D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+        <record id="pasajero_61" model="vmn_aerolinea.pasajero">
+            <field name="name">Sophia Martinez</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">16A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_62" model="vmn_aerolinea.pasajero">
+            <field name="name">Mia Rodriguez</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">16B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_63" model="vmn_aerolinea.pasajero">
+            <field name="name">Benjamin White</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">16C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_64" model="vmn_aerolinea.pasajero">
+            <field name="name">Charlotte Davis</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">16D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_65" model="vmn_aerolinea.pasajero">
+            <field name="name">David Johnson</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">17A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_66" model="vmn_aerolinea.pasajero">
+            <field name="name">Lucas Brown</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">17B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_67" model="vmn_aerolinea.pasajero">
+            <field name="name">Isabella Taylor</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">17C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_68" model="vmn_aerolinea.pasajero">
+            <field name="name">Ethan Harris</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">17D</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_69" model="vmn_aerolinea.pasajero">
+            <field name="name">Oliver Clark</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">18A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_70" model="vmn_aerolinea.pasajero">
+            <field name="name">Amelia Walker</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">18B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_71" model="vmn_aerolinea.pasajero">
+            <field name="name">Henry Lee</field>
+            <field name="destino">London City Airport</field>
             <field name="numAsiento">18C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_72" model="vmn_aerolinea.pasajero">
+            <field name="name">Mason Young</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">18D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_73" model="vmn_aerolinea.pasajero">
+            <field name="name">Maya Scott</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">19A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_74" model="vmn_aerolinea.pasajero">
+            <field name="name">Lucas Rodriguez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">19B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_75" model="vmn_aerolinea.pasajero">
+            <field name="name">Chloe Perez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">19C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_76" model="vmn_aerolinea.pasajero">
+            <field name="name">Aiden Lee</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">19D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_77" model="vmn_aerolinea.pasajero">
+            <field name="name">Zoe Adams</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">20A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_78" model="vmn_aerolinea.pasajero">
+            <field name="name">Evan Wilson</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">20B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_79" model="vmn_aerolinea.pasajero">
+            <field name="name">Sophie Moore</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">20C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_80" model="vmn_aerolinea.pasajero">
+            <field name="name">James Harris</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">20D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_81" model="vmn_aerolinea.pasajero">
+            <field name="name">Nathan Walker</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">21A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_82" model="vmn_aerolinea.pasajero">
+            <field name="name">Harper King</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">22B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_83" model="vmn_aerolinea.pasajero">
+            <field name="name">Lily Allen</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">23C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_84" model="vmn_aerolinea.pasajero">
+            <field name="name">Sebastian Carter</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">23D</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_85" model="vmn_aerolinea.pasajero">
+            <field name="name">Amos Turner</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">24A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_86" model="vmn_aerolinea.pasajero">
+            <field name="name">Megan Davis</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">24B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_87" model="vmn_aerolinea.pasajero">
+            <field name="name">Charlie Evans</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">24C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_88" model="vmn_aerolinea.pasajero">
+            <field name="name">Amelia Thompson</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">24D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_89" model="vmn_aerolinea.pasajero">
+            <field name="name">David Miller</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">25A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_90" model="vmn_aerolinea.pasajero">
+            <field name="name">Ella Perez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">25B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_91" model="vmn_aerolinea.pasajero">
+            <field name="name">Matthew Johnson</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">25C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_92" model="vmn_aerolinea.pasajero">
+            <field name="name">Abigail Clark</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">25D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_93" model="vmn_aerolinea.pasajero">
+            <field name="name">Oliver Green</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">26A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_94" model="vmn_aerolinea.pasajero">
+            <field name="name">Lily Martin</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">26B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_95" model="vmn_aerolinea.pasajero">
+            <field name="name">Benjamin Young</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">26C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_96" model="vmn_aerolinea.pasajero">
+            <field name="name">Amelia White</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">26D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_97" model="vmn_aerolinea.pasajero">
+            <field name="name">Lucas Hall</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">27A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_98" model="vmn_aerolinea.pasajero">
+            <field name="name">Sophie Wilson</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">27B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_99" model="vmn_aerolinea.pasajero">
+            <field name="name">Jack Moore</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">27C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_100" model="vmn_aerolinea.pasajero">
+            <field name="name">Charlotte Davis</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">27D</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_101" model="vmn_aerolinea.pasajero">
+            <field name="name">Oliver King</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">28A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_102" model="vmn_aerolinea.pasajero">
+            <field name="name">Ella Evans</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">28B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_103" model="vmn_aerolinea.pasajero">
+            <field name="name">Zoe Carter</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">28C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_104" model="vmn_aerolinea.pasajero">
+            <field name="name">Mason Thompson</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">28D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_105" model="vmn_aerolinea.pasajero">
+            <field name="name">Olivia Clark</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">29A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_106" model="vmn_aerolinea.pasajero">
+            <field name="name">Isaac Perez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">29B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_107" model="vmn_aerolinea.pasajero">
+            <field name="name">Maya Johnson</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">29C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_108" model="vmn_aerolinea.pasajero">
+            <field name="name">Theo Green</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">29D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_109" model="vmn_aerolinea.pasajero">
+            <field name="name">Jacob Anderson</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">30A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_110" model="vmn_aerolinea.pasajero">
+            <field name="name">Emily Wilson</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">30B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_111" model="vmn_aerolinea.pasajero">
+            <field name="name">Charlotte Moore</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">30C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_112" model="vmn_aerolinea.pasajero">
+            <field name="name">Daniel Harris</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">30D</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_113" model="vmn_aerolinea.pasajero">
+            <field name="name">Mason Smith</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">31A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_114" model="vmn_aerolinea.pasajero">
+            <field name="name">Ella Clark</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">31B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_115" model="vmn_aerolinea.pasajero">
+            <field name="name">Leo Turner</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">31C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_116" model="vmn_aerolinea.pasajero">
+            <field name="name">Ava Lee</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">31D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_117" model="vmn_aerolinea.pasajero">
+            <field name="name">Max Martinez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">32A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_118" model="vmn_aerolinea.pasajero">
+            <field name="name">Sophia Perez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">32B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_119" model="vmn_aerolinea.pasajero">
+            <field name="name">Ethan Davis</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">32C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_120" model="vmn_aerolinea.pasajero">
+            <field name="name">Isabella Wilson</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">32D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_121" model="vmn_aerolinea.pasajero">
+            <field name="name">Lucas Brown</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">33A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_122" model="vmn_aerolinea.pasajero">
+            <field name="name">Amelia Johnson</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">33B</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_123" model="vmn_aerolinea.pasajero">
+            <field name="name">Sebastian Lee</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">33C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_124" model="vmn_aerolinea.pasajero">
+            <field name="name">Chloe Harris</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">33D</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_125" model="vmn_aerolinea.pasajero">
+            <field name="name">Owen Carter</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">34A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_126" model="vmn_aerolinea.pasajero">
+            <field name="name">Madison King</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">34B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_127" model="vmn_aerolinea.pasajero">
+            <field name="name">Ella Wilson</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">34C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_128" model="vmn_aerolinea.pasajero">
+            <field name="name">Mason Thompson</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">34D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_129" model="vmn_aerolinea.pasajero">
+            <field name="name">Zoe Wilson</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">35A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_130" model="vmn_aerolinea.pasajero">
+            <field name="name">Joshua Lee</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">35B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_131" model="vmn_aerolinea.pasajero">
+            <field name="name">Lily Clark</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">35C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_132" model="vmn_aerolinea.pasajero">
+            <field name="name">Emily Miller</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">35D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_133" model="vmn_aerolinea.pasajero">
+            <field name="name">Lucas Taylor</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">36A</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_134" model="vmn_aerolinea.pasajero">
+            <field name="name">Lily Martinez</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">36B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_135" model="vmn_aerolinea.pasajero">
+            <field name="name">Liam Johnson</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">36C</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_136" model="vmn_aerolinea.pasajero">
+            <field name="name">Grace Allen</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">36D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_137" model="vmn_aerolinea.pasajero">
+            <field name="name">Harper Taylor</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">37A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_138" model="vmn_aerolinea.pasajero">
+            <field name="name">Ella Brown</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">37B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_139" model="vmn_aerolinea.pasajero">
+            <field name="name">Aidan Harris</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">37C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_140" model="vmn_aerolinea.pasajero">
+            <field name="name">Sophie Lee</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">37D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_141" model="vmn_aerolinea.pasajero">
+            <field name="name">Ethan Clark</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">38A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_142" model="vmn_aerolinea.pasajero">
+            <field name="name">Luna Perez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">38B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_143" model="vmn_aerolinea.pasajero">
+            <field name="name">Olivia Walker</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">38C</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_144" model="vmn_aerolinea.pasajero">
+            <field name="name">Jackson Green</field>
+            <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
+            <field name="numAsiento">38D</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="pasajero_145" model="vmn_aerolinea.pasajero">
+            <field name="name">Mason White</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">39A</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_146" model="vmn_aerolinea.pasajero">
+            <field name="name">Amelia Roberts</field>
+            <field name="destino">Aeropuerto Internacional John F. Kennedy</field>
+            <field name="numAsiento">39B</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>
+
+        <record id="pasajero_147" model="vmn_aerolinea.pasajero">
+            <field name="name">Benjamin Scott</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">39C</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_148" model="vmn_aerolinea.pasajero">
+            <field name="name">Chloe Young</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">39D</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_149" model="vmn_aerolinea.pasajero">
+            <field name="name">Daniel Davis</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">40A</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_150" model="vmn_aerolinea.pasajero">
+            <field name="name">Lily Turner</field>
+            <field name="destino">London City Airport</field>
+            <field name="numAsiento">40B</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="pasajero_151" model="vmn_aerolinea.pasajero">
+            <field name="name">David Anderson</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">40C</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_152" model="vmn_aerolinea.pasajero">
+            <field name="name">Isabella Garcia</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">40D</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_153" model="vmn_aerolinea.pasajero">
+            <field name="name">Elijah Wilson</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">41A</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_154" model="vmn_aerolinea.pasajero">
+            <field name="name">Zoe Martinez</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">41B</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
+        <record id="pasajero_155" model="vmn_aerolinea.pasajero">
+            <field name="name">Fernando Marcos</field>
+            <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
+            <field name="numAsiento">41C</field>
             <field name="avion_id" ref="avion_4"/>
         </record>
 

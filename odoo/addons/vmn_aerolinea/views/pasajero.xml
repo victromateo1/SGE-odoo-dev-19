@@ -12,8 +12,20 @@
                             <field name="destino"/>
                             <field name="numAsiento"/>
                             <field name="avion_id"/>
-                            <field name="maleta_ids"/>
-                             <field name="azafata_ids"/>
+                            <field name="maleta_ids">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="peso"/>
+                                    <field name="destino"/>
+                                    <field name="cabina"/>
+                                </tree>
+                            </field>
+                            <field name="azafata_ids">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="puesto"/>
+                                </tree>
+                            </field>
                         </group>
                     </sheet>
                 </form>
