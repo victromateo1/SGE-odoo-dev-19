@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="informe_aerolinea_avion" model="ir.actions.report">
+        <field name="name">Informe de un Avion</field>
+        <field name="model">vmn_aerolinea.avion</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">vmn_aerolinea.informeAerolineaAvion</field>
+        <field name="report_file">vmn_aerolinea.informeAerolineaAvion</field>
+        <field name="binding_model_id" ref="model_vmn_aerolinea_avion"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="informeAerolineaAvion">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="avion">
+                <t t-call="web.basic_layout">
+                    <div class="header"></div>
+                    <div class="page"></div>
+                    <h1 t-field="avion.name"/>
+
+                    <div>
+                        <strong>Nombre: </strong>
+                        <span t-field="avion.name"/>
+                    </div>
+
+                    <div>
+                        <strong>Destino: </strong>
+                        <span t-field="avion.destino"/>
+                    </div>
+
+                    <div>
+                        <strong>Litros de combustible: </strong>
+                        <span t-field="avion.litrosCombustible"/>
+                    </div>
+
+                    <div>
+                        <strong>Número de pasajeros: </strong>
+                        <span t-field="avion.pasajeros_count"/>
+                    </div>
+
+                    <div>
+                        <strong>Imagen: </strong>
+                    </div>
+                    <div>
+                        <img  t-att-src="image_data_uri(avion.imagen)" />
+                    </div>
+
+                    <div class="footer"></div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

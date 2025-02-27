@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <record id="vmn_aerolinea.usuarios" model="res.groups">
+            <field name="name">Usuarios basicos de la aerolínea</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+
+        <record id="vmn_aerolinea.administrador" model="res.groups">
+            <field name="name">Usuarios administrador de la aerolínea</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+    </data>
+</odoo>

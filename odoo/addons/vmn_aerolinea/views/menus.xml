@@ -4,7 +4,7 @@
         <record id="vmn_aerolinea.avion_action" model="ir.actions.act_window">
             <field name="name">Aviones</field>
             <field name="res_model">vmn_aerolinea.avion</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph,kanban,pivot</field>
         </record>
 
         <record id="vmn_aerolinea.pasajero_action" model="ir.actions.act_window">

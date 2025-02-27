@@ -1,0 +1,217 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vmn_aerolinea
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20241017\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-27 11:17+0000\n"
+"PO-Revision-Date: 2025-02-27 11:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vmn_aerolinea
+#: model:ir.ui.menu,name:vmn_aerolinea.root_menu
+msgid "Aerolínea"
+msgstr "Airline"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__avion_id
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__avion_id
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__avion_id
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.avion_form
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.avion_tree
+msgid "Avion"
+msgstr "Plane"
+
+#. module: vmn_aerolinea
+#: model:ir.actions.act_window,name:vmn_aerolinea.avion_action
+msgid "Aviones"
+msgstr "Planes"
+
+#. module: vmn_aerolinea
+#: model:ir.model,name:vmn_aerolinea.model_vmn_aerolinea_avion
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__name
+#: model:ir.ui.menu,name:vmn_aerolinea.avion_menu
+msgid "Avión"
+msgstr "Plane"
+
+#. module: vmn_aerolinea
+#: model:ir.model,name:vmn_aerolinea.model_vmn_aerolinea_azafata
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__name
+#: model:ir.ui.menu,name:vmn_aerolinea.azafata_menu
+msgid "Azafata"
+msgstr "Flight-Attendant"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__azafata_ids
+msgid "Azafatas"
+msgstr "Flight-Attendant"
+
+#. module: vmn_aerolinea
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.azafata_form
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.azafata_tree
+msgid "Azafato/a"
+msgstr "Flight-Attendant"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__azafata_ids
+msgid "Azafato/as"
+msgstr "Flight-Attendant"
+
+#. module: vmn_aerolinea
+#: model:ir.actions.act_window,name:vmn_aerolinea.azafata_action
+msgid "Azafatos"
+msgstr "Flight-Attendant"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields.selection,name:vmn_aerolinea.selection__vmn_aerolinea_azafata__puesto__0
+msgid "Bebida"
+msgstr "Drink"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields.selection,name:vmn_aerolinea.selection__vmn_aerolinea_azafata__puesto__1
+msgid "Comida"
+msgstr "Food"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__create_uid
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__create_uid
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__create_uid
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__create_date
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__create_date
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__create_date
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__description
+msgid "Descripción"
+msgstr "Description"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__destino
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__destino
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__destino
+msgid "Destino"
+msgstr "Destination"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__display_name
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__display_name
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__display_name
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__id
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__id
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__id
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__id
+msgid "ID"
+msgstr ""
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__imagen
+msgid "Imagen"
+msgstr "Image"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields.selection,name:vmn_aerolinea.selection__vmn_aerolinea_azafata__puesto__3
+msgid "Información"
+msgstr "Information"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__write_uid
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__write_uid
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__write_uid
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__write_date
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__write_date
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__write_date
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__litrosCombustible
+msgid "Litros de combustible"
+msgstr "Fuel"
+
+#. module: vmn_aerolinea
+#: model:ir.model,name:vmn_aerolinea.model_vmn_aerolinea_maleta
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__name
+#: model:ir.ui.menu,name:vmn_aerolinea.maleta_menu
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.maleta_form
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.maleta_tree
+msgid "Maleta"
+msgstr "Suitcase"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__cabina
+msgid "Maleta de cabina"
+msgstr "Cabin bag"
+
+#. module: vmn_aerolinea
+#: model:ir.actions.act_window,name:vmn_aerolinea.maleta_action
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__maleta_ids
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__maleta_ids
+msgid "Maletas"
+msgstr "Suitcases"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__numAsiento
+msgid "Numero de asiento"
+msgstr "Seat number"
+
+#. module: vmn_aerolinea
+#: model:ir.model,name:vmn_aerolinea.model_vmn_aerolinea_pasajero
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__pasajero_id
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_pasajero__name
+#: model:ir.ui.menu,name:vmn_aerolinea.pasajero_menu
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.pasajero_form
+#: model_terms:ir.ui.view,arch_db:vmn_aerolinea.pasajero_tree
+msgid "Pasajero"
+msgstr "Passenger"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__pasajero_ids
+msgid "Pasajero/as"
+msgstr "Passengers"
+
+#. module: vmn_aerolinea
+#: model:ir.actions.act_window,name:vmn_aerolinea.pasajero_action
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_avion__pasajero_ids
+msgid "Pasajeros"
+msgstr "Passenger"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_maleta__peso
+msgid "Peso"
+msgstr "Weight"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields,field_description:vmn_aerolinea.field_vmn_aerolinea_azafata__puesto
+msgid "Puesto"
+msgstr "Job"
+
+#. module: vmn_aerolinea
+#: model:ir.model.fields.selection,name:vmn_aerolinea.selection__vmn_aerolinea_azafata__puesto__2
+msgid "Seguridad"
+msgstr "Safety"

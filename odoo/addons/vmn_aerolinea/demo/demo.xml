@@ -33,6 +33,30 @@
             <field name="imagen" file="vmn_aerolinea/static/img/boeing737.jpg" type="base64"></field>
         </record>
 
+        <record id="azafata_1" model="vmn_aerolinea.azafata">
+            <field name="name">María López</field>
+            <field name="puesto">0</field>
+            <field name="avion_id" ref="avion_1"/>
+        </record>
+
+        <record id="azafata_2" model="vmn_aerolinea.azafata">
+            <field name="name">Laura Fernández</field>
+            <field name="puesto">1</field>
+            <field name="avion_id" ref="avion_2"/>
+        </record>        
+
+        <record id="azafata_3" model="vmn_aerolinea.azafata">
+            <field name="name">Cristina Sánchez</field>
+            <field name="puesto">2</field>
+            <field name="avion_id" ref="avion_3"/>
+        </record>
+
+        <record id="azafata_4" model="vmn_aerolinea.azafata">
+            <field name="name">Gustavo García</field>
+            <field name="puesto">3</field>
+            <field name="avion_id" ref="avion_4"/>
+        </record>
+
         <record id="pasajero_1" model="vmn_aerolinea.pasajero">
             <field name="name">Juan Pérez</field>
             <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
@@ -52,6 +76,7 @@
             <field name="destino">London City Airport</field>
             <field name="numAsiento">1C</field>
             <field name="avion_id" ref="avion_3"/>
+            <field name="azafata_ids" eval="[(6, 0, [ref('azafata_1'), ref('azafata_2'), ref('azafata_3')])]"/>
         </record>
 
         <record id="pasajero_4" model="vmn_aerolinea.pasajero">
@@ -80,6 +105,7 @@
             <field name="destino">London City Airport</field>
             <field name="numAsiento">2C</field>
             <field name="avion_id" ref="avion_3"/>
+            <field name="azafata_ids" eval="[(6, 0, [ref('azafata_1'),ref('azafata_4')])]"/>
         </record>
 
         <record id="pasajero_8" model="vmn_aerolinea.pasajero">
@@ -122,6 +148,7 @@
             <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
             <field name="numAsiento">4A</field>
             <field name="avion_id" ref="avion_1"/>
+            <field name="azafata_ids" eval="[(6, 0, [ref('azafata_3'),ref('azafata_4')])]"/>
         </record>
 
         <record id="pasajero_14" model="vmn_aerolinea.pasajero">
@@ -129,6 +156,7 @@
             <field name="destino">Aeropuerto Josep Tarradellas Barcelona-El Prat</field>
             <field name="numAsiento">4B</field>
             <field name="avion_id" ref="avion_1"/>
+            <field name="azafata_ids" eval="[(6, 0, [ref('azafata_1'),ref('azafata_2')])]"/>
         </record>
 
         <record id="pasajero_15" model="vmn_aerolinea.pasajero">
@@ -1149,30 +1177,6 @@
             <field name="destino">Aeropuerto de París-Charles de Gaulle</field>
             <field name="cabina">True</field>
             <field name="pasajero_id" ref="pasajero_4"/>
-            <field name="avion_id" ref="avion_4"/>
-        </record>
-
-        <record id="azafata_1" model="vmn_aerolinea.azafata">
-            <field name="name">María López</field>
-            <field name="puesto">0</field>
-            <field name="avion_id" ref="avion_1"/>
-        </record>
-
-        <record id="azafata_2" model="vmn_aerolinea.azafata">
-            <field name="name">Laura Fernández</field>
-            <field name="puesto">1</field>
-            <field name="avion_id" ref="avion_2"/>
-        </record>        
-
-        <record id="azafata_3" model="vmn_aerolinea.azafata">
-            <field name="name">Cristina Sánchez</field>
-            <field name="puesto">2</field>
-            <field name="avion_id" ref="avion_3"/>
-        </record>
-
-        <record id="azafata_4" model="vmn_aerolinea.azafata">
-            <field name="name">Gustavo García</field>
-            <field name="puesto">3</field>
             <field name="avion_id" ref="avion_4"/>
         </record>
 

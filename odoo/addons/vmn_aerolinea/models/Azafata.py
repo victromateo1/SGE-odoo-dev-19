@@ -15,4 +15,4 @@ class Azafata(models.Model):
     ], string='Puesto', default='0')
     
     avion_id = fields.Many2one('vmn_aerolinea.avion', string='Avion')
-    pasajero_ids = fields.Many2many('vmn_aerolinea.pasajero', string='Pasajero/as', relation='vmn_aerolinea_azafata_pasajero_rel')
+    pasajero_ids = fields.Many2many('vmn_aerolinea.pasajero', relation='vmn_aerolinea_azafata_pasajero_rel', string='Pasajero/as')

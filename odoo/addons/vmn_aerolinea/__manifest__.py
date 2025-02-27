@@ -2,13 +2,17 @@
 {
     'name': "vmn_aerolinea",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Este es un módulo para la gestión de una aerolínea",
 
     'description': """
-Long description of module's purpose
+Este es un módulo para la gestión de una aerolínea
     """,
 
-    'author': "My Company",
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+    'author': "Víctor Mateo Navajas",
     'website': "https://www.yourcompany.com",
     'icon': '/vmn_aerolinea/static/description/icono.png',
 
@@ -19,16 +23,19 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'mail'],
 
     # always loaded
     'data': [
+        'security/grupos_seguridad.xml',
         'security/ir.model.access.csv',
         'views/menus.xml',
         'views/avion.xml',
         'views/azafata.xml',
         'views/maleta.xml',
-        'views/pasajero.xml'
+        'views/pasajero.xml',
+        'reports/report_avion.xml',
+        'reports/report_pasajero.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -36,6 +36,11 @@
                             <field name="imagen" widget="image" options="{'size': [256,256]}"/>
                         </group>
                     </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" groups="base.group_user" widget="mail_followers" />
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
                 </form>
             </field>
         </record>
@@ -55,6 +60,64 @@
                     <field name="azafata_ids"/>
                     <field name="maleta_ids"/>
                 </tree>
+            </field>
+        </record>
+
+        <record id="vmn_aerolinea.avion_graph" model="ir.ui.view">
+            <field name="name">Grafico de aviones</field>
+            <field name="model">vmn_aerolinea.avion</field>
+            <field name="arch" type="xml">
+                <graph string="Aviones" type="pie">
+                    <field name="name"/>
+                    <field name="pasajeros_count" type="measure"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="vmn_aerolinea.avion_kanban" model="ir.ui.view">
+            <field name="name">Avion kanban</field>
+            <field name="model">vmn_aerolinea.avion</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_record_headings">
+                                <strong class="o_kanban_record_title oe_partener_heading">
+                                    <p>
+                                    <field name="name"/>
+                                    </p>
+                                </strong>
+                                <ul>
+                                    <li>
+                                    <field name="pasajeros_count"/> pasajeros
+                                    </li>
+                                    <li>
+                                    <field name="destino"/>destino
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        
+        <record id="vmn_aerolinea.avion_pivot" model="ir.ui.view">
+            <field name="name">Pivot table avion</field>
+            <field name="model">vmn_aerolinea.avion</field>
+            <field name="arch" type="xml">
+                <pivot string="Pivot table" disable_linking="true">
+                    <field name="pasajeros_count" type="row"/>
+                    <field name="name" type="col"/>
+                </pivot>
             </field>
         </record>
     </data>

@@ -47,5 +47,15 @@
                 </tree>
             </field>
         </record>
+        
+        <record id="vmn_aerolinea.pasajero_search" model="ir.ui.view">
+            <field name="name">Search pasajero</field>
+            <field name="model">vmn_aerolinea.pasajero</field>
+            <field name="arch" type="xml">
+                <search string="Search pasajero">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
     </data>
 </odoo>
